@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Website is Alive</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main id="game" class="game">
+      <h1>THE WEBSITE IS ALIVE</h1>
+      <p id="message" aria-live="polite">Everything is completely normal.</p>
+
+      <section class="status">
+        <span>Anger: <strong id="angerText">0 / 100</strong></span>
+        <div class="meter">
+          <div id="angerFill"></div>
+        </div>
+      </section>
+
+      <div class="controls">
+        <button id="wakeBtn">Wake Website</button>
+        <button id="pokeBtn">Poke Website</button>
+        <button id="apologyBtn">Apologize</button>
+        <button id="mysteryBtn">Mystery Button</button>
+      </div>
+
+      <section class="clues">
+        <h2>Shutdown Clues</h2>
+        <p id="clueOne">Clue 1: ???</p>
+        <p id="clueTwo">Clue 2: ???</p>
+        <p id="clueThree">Clue 3: ???</p>
+      </section>
+
+      <section class="shutdown">
+        <h2>Emergency Shutdown</h2>
+        <label for="codeInput">Enter Shutdown Code:</label>
+        <input type="text" id="codeInput" />
+        <button id="shutdownBtn">SHUTDOWN</button>
+        <p id="result" aria-live="polite">Waiting for clues...</p>
+        <button id="resetBtn">Restart Game</button>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
